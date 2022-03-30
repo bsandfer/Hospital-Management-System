@@ -5,7 +5,7 @@ const employeesData = [
     name: "Kien Hoang",
     sex: "male",
     title: "doctor",
-    dob: 2011 - 11 - 27,
+    dob: new Date('11/27/2011'),
     mobile: "123456789",
     email: "test@gmail.com",
     salary: 100000
@@ -14,7 +14,7 @@ const employeesData = [
     name: "Sean Cruz",
     sex: "male",
     title: "doctor",
-    dob: 2011 - 11 - 27,
+    dob: new Date('11/29/2011'),
     mobile: "123456789",
     email: "test@gmail.com",
     salary: 100000
@@ -23,7 +23,7 @@ const employeesData = [
     name: "Hye Won Park ",
     sex: "male",
     title: "doctor",
-    dob: 2011 - 11 - 27,
+    dob: new Date('11/27/2011'),
     mobile: "123456789",
     email: "test@gmail.com",
     salary: 100000
@@ -32,7 +32,7 @@ const employeesData = [
     name: "Brendan Sandfer",
     sex: "male",
     title: "doctor",
-    dob: 2002 - 11 - 27,
+    dob: new Date('11/27/2011'),
     mobile: "123456789",
     email: "test@gmail.com",
     salary: 100000
