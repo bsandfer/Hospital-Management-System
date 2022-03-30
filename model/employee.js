@@ -12,7 +12,10 @@ Employee.init({
   },
   name: DataTypes.STRING,
   sex: DataTypes.STRING,
-  dob: DataTypes.DATEONLY,
+  dob: {
+    type: DataTypes.DATEONLY,
+    defaultValue: new Date()
+  },
   mobile: DataTypes.INTEGER,
   email: DataTypes.STRING,
   salary: DataTypes.INTEGER
