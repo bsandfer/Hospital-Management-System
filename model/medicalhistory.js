@@ -1,6 +1,5 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
-const Patient = require("./patient");
 
 class MedicalHistory extends Model {}
 

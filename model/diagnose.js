@@ -2,8 +2,6 @@
 
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
-const Employee = require("./employee");
-const Patient = require("./patient");
 
 class Diagnose extends Model {}
 

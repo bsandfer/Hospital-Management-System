@@ -24,7 +24,11 @@ Patient.init(
     pcp_contact: DataTypes.INTEGER,
     insurance: DataTypes.STRING,
   },
-  { sequelize, timestamps: false, modelName: "patient" }
+  {
+    sequelize,
+    timestamps: false,
+    modelName: "patients",
+  }
 );
 
 module.exports = Patient;
