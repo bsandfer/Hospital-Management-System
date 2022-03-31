@@ -13,35 +13,34 @@ Diagnose.init({
     allowNull: false,
     references: {
       model: Employee,
-      key: "id",
+      key: "id"
+    }
     },
-  },
   patient_id: {
     type: DataTypes.INTEGER,
     allowNull: false,
     references: {
       model: Patient,
-      key: "id",
-    },
+      key: "id"
+    }
   },
   diagnosis: {
     type: DataTypes.STRING,
-    allowNull: false,
+    allowNull: false
   },
   exams: {
     type: DataTypes.STRING,
-    allowNull: false,
+    allowNull: false
   },
   treatment: {
     type: DataTypes.STRING,
-    allowNull: false,
+    allowNull: false
   },
   prescribed_meds: {
     type: DataTypes.STRING,
-    allowNull: false,
-  },
-  sequelize,
-  modelName: "diagnose",
-});
+    allowNull: false
+  }
+},
+ { sequelize, modelName: "diagnose"}) ;
 
 module.exports = Diagnose;

@@ -44,11 +44,7 @@ Appointments.init(
       allowNull: false,
     },
   },
-  {
-    sequelize,
-    timestamps: false,
-    modelName: "Appointments",
-  }
+  { sequelize, timestamps: false,  modelName: "Appointments"}
 );
 
 module.exports = Appointments;

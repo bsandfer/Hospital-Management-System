@@ -14,26 +14,15 @@ EmpSched.init(
       },
     },
     start_time: {
-      type: DataTypes.DATETIME,
+      type: DataTypes.TIME,
       allowNull: false,
     },
     end_time: {
-      type: DataTypes.DATETIME,
+      type: DataTypes.TIME,
       allowNull: false,
     },
-    /* patient_list: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: Patient,
-        key: "id",
-      },
-    }, */
   },
-  {
-    sequelize,
-    timestamps: false,
-    modelName: "EmpSched",
-  }
+  { sequelize, timestamps: false, modelName: "EmpSched"}
 );
 
 module.exports = EmpSched;

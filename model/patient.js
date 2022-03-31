@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
-const Appointments = require("./appointments");
-const MedicalHistory = require("./medicalhistory");
+// const Appointments = require("./appointments");
+// const MedicalHistory = require("./medicalhistory");
 
 class Patient extends Model {}
 
@@ -23,24 +23,6 @@ Patient.init(
     primary_care_physician: DataTypes.STRING,
     pcp_contact: DataTypes.INTEGER,
     insurance: DataTypes.STRING,
-
-    //make references to medicalhistory model
-    medical_history: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: MedicalHistory,
-        key: "patient_id",
-      },
-    },
-
-    //make references to appt model
-    appointments: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: Appointments,
-        key: "patient_id",
-      },
-    },
   },
   { sequelize, timestamps: false, modelName: "patient" }
 );

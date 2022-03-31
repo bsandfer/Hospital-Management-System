@@ -1,5 +1,5 @@
-require('dotenv').config()
+// require('dotenv').config()
 const { Sequelize } = require('sequelize')
 
-module.exports = new Sequelize(process.env.LOCAL_URL)
+module.exports = new Sequelize('mysql://root:Ihatemath101$@localhost/hsm_db')
 

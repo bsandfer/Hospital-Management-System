@@ -11,9 +11,11 @@ app.use(express.json())
 
 app.use(require('./controller'))
 
-async function init() {
-  await require("./config/connection").sync();
-  app.listen(process.env.PORT || 3001);
-}
+// async function init() {
+//   await require("./config/connection").sync();
+//   app.listen(process.env.PORT || 3001);
+// }
 
-init();
+// init();
+
+require('./config/connection').sync();

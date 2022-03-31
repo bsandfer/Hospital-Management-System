@@ -11,10 +11,10 @@ MedicalHistory.init({
     references: {
       model: Patient,
       key: "id",
-    },
+    }
   },
   year: {
-    type: DataTypes.TIMESTAMP,
+    type: DataTypes.DATE,
     allowNull: false,
   },
   condition: {
@@ -28,9 +28,8 @@ MedicalHistory.init({
   medication: {
     type: DataTypes.STRING,
     allowNull: false,
-  },
-  sequelize,
-  modelName: "Medicalhistory",
-});
+  }
+},
+  { sequelize, timestamps: false, modelName: "Medicalhistory" });
 
 module.exports = MedicalHistory;
